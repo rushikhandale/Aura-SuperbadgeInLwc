@@ -1,0 +1,32 @@
+<template>
+    <lightning-card variant="Narrow"  title={boatowner} icon-name="utility:anchor">
+        <lightning-button label="Full Details" onclick={showDetails}></lightning-button>
+        <lightning-tabset>
+            <lightning-tab label="Details">
+            <lightning-record-view-form
+                record-id={boatId}
+                object-api-name="Boat__c">
+                <div class="imageview">
+                    <img src={imgSrc}>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field field-name="Name"></lightning-output-field>
+                        <lightning-output-field field-name="Description__c"></lightning-output-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field field-name="Price__c"></lightning-output-field>
+                        <lightning-output-field field-name="Year_Built__c"></lightning-output-field>
+                    </div>
+                </div>
+            </lightning-record-view-form>
+            </lightning-tab>
+            <lightning-tab label="Review" title="2nd tab extended title">
+                
+            </lightning-tab>
+            <lightning-tab label="Add Review">
+                
+            </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>   
+</template>

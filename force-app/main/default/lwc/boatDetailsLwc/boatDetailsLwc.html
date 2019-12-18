@@ -1,0 +1,7 @@
+<template>
+    <template if:true={boatId}>
+    <lightning-card>
+        <c-boat-detail-lwc boat-id={boatId} img-src={boat.Picture__c} contact-name={boat.Contact__r.Name}></c-boat-detail-lwc>
+    </lightning-card>
+    </template>
+</template>

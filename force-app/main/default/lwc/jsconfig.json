@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/boatDetailLwc": [
+                "boatDetailLwc/boatDetailLwc.js"
+            ],
+            "c/boatDetailsLwc": [
+                "boatDetailsLwc/boatDetailsLwc.js"
+            ],
+            "c/boatSearchFormLwc": [
+                "boatSearchFormLwc/boatSearchFormLwc.js"
+            ],
+            "c/boatSearchLwc": [
+                "boatSearchLwc/boatSearchLwc.js"
+            ],
+            "c/boatSearchResultLwc": [
+                "boatSearchResultLwc/boatSearchResultLwc.js"
+            ],
+            "c/boatTileLwc": [
+                "boatTileLwc/boatTileLwc.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
